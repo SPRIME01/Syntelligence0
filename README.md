@@ -1,2 +1,2 @@
-# Project overview
-# Required imports: 
+# Syntelligence
+The synergy between human and artificial intelligence.
