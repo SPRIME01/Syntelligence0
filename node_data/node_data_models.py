@@ -1,12 +1,13 @@
 # Defines node data models
 # Required imports: dataclasses, typing
-import pydantic.dataclasses as py_dataclass
-import UUID 
+from dataclasses import dataclass
+from typing import Dict
+import uuid
 
 
-@py_dataclass.dataclass
-class Node: 
-    id: UUID
+@dataclass
+class Node:
+    id: uuid.UUID
     name: str
     node_type: str
-    attributes: dict
+    attributes: Dict[str, str]

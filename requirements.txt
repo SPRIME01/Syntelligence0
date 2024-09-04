@@ -1,2 +1,0 @@
-# Lists Python package requirements
-# Required imports: 

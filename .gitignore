@@ -2,3 +2,27 @@ echo "*.pyc" >> .gitignore
 echo "__pycache__" >> .gitignore
 echo "venv/" >> .gitignore
 echo ".venv/" >> .gitignore
+
+# Node modules directory
+node_modules/
+
+# npm debug log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables file
+.env
+
+# npm package lock file
+package-lock.json
+yarn.lock
+
+# Other files and directories to ignore
+.DS_Store
+.idea/
+.vscode/
+dist/
+build/
+coverage/
+

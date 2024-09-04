@@ -1,6 +1,7 @@
 from enum import Enum
 from dataclasses import dataclass
 
+
 @dataclass
 class NodeType(Enum):
     API_ENDPOINT = ("API_ENDPOINT", {"attribute1": "value1"})
