@@ -6,10 +6,16 @@ from typing import Dict, List
 class NodeTypeRegistry:
     """Registry of node types."""
 
-    node_types: Dict[str, Dict[str, List[str]]] = field(default_factory=dict)
+    def __init__(self):
+        self.node_types: Dict[str, Dict[str, List[str]]] = field(default_factory=dict)
 
     def initialize(self) -> None:
-        """Add any initialization logic here."""
+        """Initialize the registry with default node types"""
+        self.add_node_type("HUMAN", ["attribute1"])
+        self.add_node_type("AI_AGENT", ["attribute1"])
+        self.add_node_type("INTERNAL_API_ENDPOINT", ["attribute1"])
+        self.add_node_type("EXTERNAL_API_ENDPOINT", ["attribute1"])
+        self.add_node_type("GROUP", ["attribute1"])
 
     def add_node_type(self, node_type: str, attributes: List[str]) -> None:
         """Add a node type to the registry.
