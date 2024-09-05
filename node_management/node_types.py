@@ -7,6 +7,14 @@ class NodeTypeRegistry:
     """Registry of node types."""
 
     def __init__(self):
+        """
+        Initialize the node type registry.
+
+        The registry is a dictionary mapping node type names to dictionaries
+        containing the attributes of the node type. The keys of the inner
+        dictionaries are the attribute names, and the values are lists of strings
+        representing the attribute values.
+        """
         self.node_types: Dict[str, Dict[str, List[str]]] = field(default_factory=dict)
 
     def initialize(self) -> None:
